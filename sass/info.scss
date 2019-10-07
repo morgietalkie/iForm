@@ -1,0 +1,116 @@
+// Frost scss
+* {
+  margin: 0;
+  padding: 0;
+}
+#info {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#customer {
+  margin-top: 20px;
+  height: 100%;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+#customer h1 {
+  font-size: 16px;
+}
+#customer_form {
+  margin-top: 20px;
+}
+.form-group {
+  width: 50%;
+  position: relative;
+  height: 50px;
+  margin: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  height: 100%;
+  color: grey;
+  border-radius: 2px;
+  border: 1px solid rgb(187, 187, 187);
+  padding: 10px;
+}
+
+.form-group label {
+  position: absolute;
+  top: 17px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgba(179, 175, 175, 0.705);
+  font-size: 12px;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label {
+  transform: translateY(-65%);
+  color: #5c1182;
+}
+
+.form-group input:valid:not(:placeholder-shown):not(:focus) {
+  border-color: green;
+}
+.form-group input:invalid:not(:placeholder-shown):not(:focus) {
+  //   border-color: red;
+}
+
+.form-group input {
+  width: 330px;
+}
+
+.form-group:nth-of-type(4) input {
+  width: 65px;
+  flex-wrap: wrap;
+}
+
+.form-group:nth-of-type(5) input {
+  width: 130px;
+}
+
+.customer_submit {
+  background-color: #5c1182;
+  width: 200px;
+  height: 40px;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.customer_submit:hover {
+  color: #aeafb1;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.form-group:nth-last-of-type(1) {
+  margin: 0 auto;
+}
+
+.back_button {
+  color: #888b8d;
+  border-bottom: 2px solid#888b8d;
+  padding: 2px;
+  margin: 10px;
+  font-size: 10px;
+}
+
+#all_content {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #cececea6;
+}
