@@ -17,8 +17,15 @@ function openSidebar() {
 
 function start() {}
 
-// Christians
-document.querySelector(".next").addEventListener("click", plusSlides);
+// Christians slide snuppet fra https://www.w3schools.com/howto/howto_js_slideshow.asp
+document.querySelector(".next").addEventListener("click", () => plusSlides(1));
+document.querySelector(".prev").addEventListener("click", () => plusSlides(-1));
+const dots = document.querySelectorAll(".dot");
+dots.forEach(d => {
+  d.addEventListener("click", e => {
+    currentSlide(e.target.dataset.index);
+  });
+});
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -31,6 +38,7 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
+  console.log(n);
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
