@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -29,7 +31,80 @@
 
     <main>
       <section id="content"></section>
-      <section id="popup"></section>
+      <section id="popup">
+        <div class="popup_header">
+          <h1 class="popup_title1">ActiveFit fiberjakke</h1>
+          <h1 class="popup_title2"></h1>
+          <button class="close_popup"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </div>
+
+        <div class="popup_content">
+          <div class="popup_product_image">
+            <img src="img/activefit_jakke.png" alt="activefit_jakke" />
+
+            <div class="select_wrapper">
+              <select id="size-select">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extra-large">Extra Large</option>
+              </select>
+
+              <figcaption>Værdi: DKK 600,-</figcaption>
+            </div>
+          </div>
+
+          <div class="size_selector">
+            <h2>Vælg størrelse</h2>
+            <button class="size_button s-size" value="small">S</button>
+            <button class="size_button m-size" value="medium">M</button>
+            <button class="size_button l-size" value="large">L</button>
+            <button class="size_button xl-size" value="extra-large">XL</button>
+          </div>
+
+          <div class="magazine_selector">
+            <form name="formA">
+              <div>
+                <fieldset>
+                  <legend class="offer1">Dit Valg</legend>
+                  <input type="radio" name="offers" id="offer1" value="offer1" checked />
+                  <label for="offer1">
+                    <h3>4 numre for 149,-</h3>
+                    <h4>Spar: 761kr.</h4>
+                  </label>
+                </fieldset>
+
+                <fieldset>
+                  <legend class="offer2">Mest populære</legend>
+                  <input type="radio" name="offers" id="offer2" value="offer2" />
+                  <label for="offer2">
+                    <h3>6 numre for 199kr.</h3>
+                    <h4>Spar 866kr.</h4>
+                  </label>
+                </fieldset>
+
+                <fieldset>
+                  <legend class="offer3"></legend>
+                  <input type="radio" name="offers" id="offer3" value="offer3" />
+                  <label for="offer3">
+                    <h3>8 numre for 299kr.</h3>
+                    <h4>Spar 921kr.</h4>
+                  </label>
+                </fieldset>
+              </div>
+            </form>
+
+            <div class="magazine_info">
+              <p>+49,50kr. i porto og eksp.</p>
+              <a href="" class="see_offer">Se din besparelse</a>
+            </div>
+
+           
+              <div class="go_to_basket"><p>Gå til kurven</p></div></a
+            
+          </div>
+        </div>
+      </section>
 
       <button class="open_popup">Button</button>
     </main>
