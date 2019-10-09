@@ -28,7 +28,16 @@
       </header>
 
       <main>
-        <section id="breadcrumb"></section>
+        <section id="breadcrumb">
+          <div class="breadcrumb_content">
+            <div class="breadcrumb_wrapper">
+              <h3 class="breadcrumb_step1">1. Kurv</h3>
+              <h3 class="breadcrumb_step2">2. Levering</h3>
+              <h3 class="breadcrumb_step3">3. Betalingsmetode</h3>
+            </div>
+            <div class="breadcrumb_arrow"></div>
+          </div>
+        </section>
         <section id="basket"></section>
         <section id="info">
           <div id="customer">
@@ -36,35 +45,36 @@
 
             <form id="customer_form">
               <div class="form-group">
-                <input type="text" name="customer_firstname" required />
+                <input type="text" name="customer_firstname" required placeholder="&nbsp;" />
                 <label for="customer_firstname">Fornavn</label>
               </div>
 
               <div class="form-group">
-                <input type="text" name="customer_lastname" required />
+                <input type="text" name="customer_lastname" required placeholder="&nbsp;" />
                 <label for="customer_lastname">Efternavn</label>
               </div>
 
               <div class="form-group">
-                <input type="text" name="customer_address" required />
+                <input type="text" name="customer_address" required placeholder="&nbsp;" />
                 <label for="customer_address">Adresse</label>
               </div>
 
               <div class="form-group">
-                <input type="number" name="customer_postcode" required />
+                <input type="number" name="customer_postcode" required placeholder="&nbsp;" />
                 <label for="customer_postcode">Postnr.</label>
               </div>
               <div class="form-group">
-                <input type="text" name="customer_city" required />
+                <input type="text" name="customer_city" required placeholder="&nbsp;" />
                 <label for="customer_city">By</label>
               </div>
+
               <div class="form-group">
-                <input type="email" name="customer_email" required />
+                <input type="email" name="customer_email" required placeholder="&nbsp;" />
                 <label for="customer_email">E-mail</label>
               </div>
 
               <div class="form-group">
-                <input type="number" name="customer_phone" required />
+                <input type="number" name="customer_phone" required placeholder="&nbsp;" />
                 <label for="customer_phone">Telefon nr.</label>
               </div>
               <div class="form-group">
@@ -78,7 +88,21 @@
         <section id="billing"></section>
       </main>
 
-      <footer></footer>
+      <footer>
+        <div class="footer_content">
+          <h4 class="footer_title">Om I FORM</h4>
+          <p>
+            Styrketræning, maveøvelser, poweryoga, løb eller lange gåture … Uanset hvordan du træner, finder du masser af inspiration i det I FORM – vi fortæller om nye, spændende motionsformer, som gør dig stærkere, gladere og sundere. Men I FORM er
+            ikke bare motion. Du får også at vide, hvordan maden påvirker din krop og dit humør, og hvordan du kan øge dit velbefindende ved at spise <br />
+            rigtigt.
+          </p>
+        </div>
+
+        <div class="footer_content">
+          <h4 class="footer_title">Sikker betaling med</h4>
+          <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/icon-payment-options-da.png" alt="Betalningsalternativ" />
+        </div>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>
