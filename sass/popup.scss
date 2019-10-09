@@ -67,7 +67,6 @@
 .size_selector {
   width: 100%;
   text-align: center;
-  margin-bottom: 30%;
 }
 .size_selector h2 {
   font-weight: 100;
@@ -169,7 +168,7 @@ fieldset {
   height: 80px;
 }
 
-input {
+.popup_input {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -179,12 +178,12 @@ input {
   white-space: nowrap;
 }
 
-label {
+.popup_label {
   user-select: none;
   text-align: center;
 }
 
-label h4 {
+.popup_label h4 {
   color: #ff3366;
   position: absolute;
   left: 50%;
@@ -193,7 +192,7 @@ label h4 {
   font-weight: 100;
 }
 
-label h3 {
+.popup_label h3 {
   margin: 0;
   position: absolute;
   left: 50%;
@@ -202,7 +201,7 @@ label h3 {
   font-size: 1em;
 }
 
-label:after {
+.popup_label:after {
   content: "";
   position: absolute;
   top: 0;
@@ -214,7 +213,7 @@ label:after {
   transition: 0.5s;
 }
 
-input:checked + label:after {
+.popup_input:checked + .popup_label:after {
   border-color: #5c1182;
   transition: 0.5s;
 }

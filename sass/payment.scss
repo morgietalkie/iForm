@@ -1,0 +1,138 @@
+.payment {
+  padding: 1.2em 0;
+}
+
+.your-payment {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.payment-method {
+  margin: 0.3em 0 0;
+}
+
+.forms {
+  position: relative;
+  padding: 0.75em 0;
+  font-size: 0.9em;
+}
+
+.form-box {
+  border: 1px solid silver;
+  border-radius: 2px;
+  padding: 1.2em 1em 1.2em;
+  margin-bottom: 1.2em;
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+}
+
+input[type="radio"],
+[type="checkbox"] {
+  -webkit-appearance: none;
+  position: relative;
+  float: left;
+  margin-right: 1em;
+  width: 1.5em;
+  height: 1.5em;
+  border: 1px solid silver;
+  background: white;
+  top: 3px;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  background-color: hsl(145, 81%, 69%);
+  border-color: #6ef0a5;
+}
+
+.inner-form-inline {
+  display: inline-block;
+}
+
+.form-label {
+  display: inline-block;
+  width: 85%;
+}
+
+.form-label p {
+  margin: 0;
+}
+
+.form-label a {
+  color: silver;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.form-icons {
+  position: absolute;
+  top: 1.5em;
+  right: 1em;
+}
+
+.form-icons img {
+  height: auto;
+  max-width: 100%;
+  max-height: 1.2em;
+  margin-left: 0.1em;
+}
+
+.form-afgift {
+  position: absolute;
+  top: 0.6em;
+  right: 1em;
+}
+
+.form-afgift p {
+  font-size: 0.8em;
+  color: silver;
+  margin-top: 1em;
+}
+
+.form-bottom {
+  margin-bottom: 0.5em;
+}
+
+.summary {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+ul li {
+  margin: 0.7em 0;
+  font-size: 0.9em;
+}
+
+.cart-label {
+  color: #5c1182;
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  padding: 2px;
+  background-color: #fff;
+}
+
+.gotopayment {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: white;
+  background-color: #5c1182;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.7em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+}
