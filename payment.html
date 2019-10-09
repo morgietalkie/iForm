@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="http://mozilla.github.io/foundation-icons/assets/foundation-icons.css" type="text/css" rel="stylesheet" />
+
+    <title>Payment</title>
+  </head>
+  <body class="gray">
+    <div class="content">
+      <div class="checkout">
+        <div class="checkout_body">
+          <div class="payment">
+            <h1 class="your-payment">Vælg betalingsmetode</h1>
+
+            <div class="payment-method">
+              <div class="forms form-box">
+                <input
+                  type="radio"
+                  id="visadankort"
+                  name="payment-option"
+                  class="inner-form-inline"
+                  value="dibs;label=Visa/Dankort; isCard=1; merchant_id=merchant_id_2; type=WebPay; dibs_paytype=DK,FFK"
+                  required
+                />
+                <label for="visadankort" class="form-label">Visa/Dankort</label>
+
+                <div class="form-icons">
+                  <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-dankort.png" alt="Dankort" />
+                  <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-fbf.png" alt="Facebook" />
+                </div>
+              </div>
+
+              <div class="forms form-box">
+                <input
+                  type="radio"
+                  id="kreditkort"
+                  name="payment-option"
+                  class="inner-form-inline"
+                  value="dibs;label=Kreditkort; isCard=1; merchant_id=merchant_id_1; type=WebPay; dibs_paytype=MC,VISA,MTRO,ELEC"
+                  required
+                />
+                <label for="kreditkort" class="form-label">Kreditkort</label>
+                <div class="form-icons">
+                  <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-visa.png" alt="Visa" />
+                  <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-mastercard.png" alt="MasterCard" />
+                  <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-electron.png" alt="Visa Electron" />
+                  <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-maestro.png" alt="Maestro" />
+                </div>
+              </div>
+
+              <div class="forms form-box">
+                <input
+                  type="radio"
+                  id="mobilepay"
+                  name="payment-option"
+                  class="inner-form-inline"
+                  value="dibs;label=MobilePay; merchant_id=merchant_id_3; type=MobilePay; dibs_paytype=MPO_Nets,MPO_EULI"
+                  required
+                />
+                <label for="mobilepay" class="form-label">MobilePay</label>
+                <div class="form-icons">
+                  <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-mobilepay.png" alt="Mobile Pay" />
+                </div>
+              </div>
+
+              <div class="forms form-box">
+                <input type="radio" id="girokort" name="payment-option" class="inner-form-inline" value="giro;type=Web;isGiro=1;" required />
+                <label for="girokort" class="form-label giro-width">Girokort </label>
+                <div class="form-afgift"><p>+ 15 kr. i afgift</p></div>
+              </div>
+            </div>
+
+            <div class="forms form-bottom">
+              <input type="checkbox" id="card-terms" class="inner-form-inline" />
+              <label for="card-terms" class="form-label"
+                ><p>Jeg har læst og accepteret vilkår for kortbetaling</p>
+                <a href="#" class="form-link">Betingelser</a></label
+              >
+            </div>
+
+            <div class="forms form-bottom">
+              <input type="checkbox" id="terms" class="inner-form-inline" />
+              <label for="terms" class="form-label"
+                ><p>Jeg har læst og accepteret abonnementsbetingelserne</p>
+                <a href="#" class="form-link">Læs mere</a></label
+              >
+            </div>
+
+            <div class="forms">
+              <input type="checkbox" id="news" class="inner-form-inline" />
+              <label for="news" class="form-label"
+                ><p>
+                  Ja tak, jeg vil gerne modtage spændende nyhedsbreve og tilbud. Du kan til enhver tid afmelde dig direkte markedsføring
+                </p>
+                <a href="#" class="form-link">Læs mere</a></label
+              >
+            </div>
+
+            <div class="extra-info">
+              <ul class="summary">
+                <li>Efter tilbuddet fortsætter du i løbende abonnement og kan til enhver tid opsige det.</li>
+                <li>iFORM udkommer 18 gange om året.</li>
+                <li>Abonnementet betales for 4 numre ad gangen, i alt 310 kr. (77,50 kr. pr. nummer).</li>
+              </ul>
+            </div>
+
+            <div class="cart-item">
+              <div class="cart-label">Kurv</div>
+              <div class="cart-image">
+                <img src="img/fiberjakke_600x600.png" alt="Fiberjakke" />
+              </div>
+              <div class="cart-item-info">
+                <h2>4 numre af iFORM</h2>
+                <p>+ ActiveFit fiberjakke</p>
+                <p class="text-padding">Størrelse: XL</p>
+              </div>
+            </div>
+
+            <div class="cart-sum">
+              <p>Totalpris inkl. levering</p>
+              <h1>198,50 kr.</h1>
+            </div>
+
+            <div class="checkout_item">
+              <button class="gotopayment">
+                Gå til sikker betaling
+                <i class="fa fa-arrow-right"></i>
+              </button>
+              <a class="back" href="index.html">Gå tilbage</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

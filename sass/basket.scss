@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+.gray {
+  background-color: lightgray;
+}
+
 div {
   display: block;
 }
@@ -15,6 +19,7 @@ div {
 .content {
   margin: 0 auto;
   max-width: 600px;
+  background: white;
 }
 
 .checkout {
@@ -25,19 +30,20 @@ div {
   width: 100%;
   margin: 0 auto;
   padding: 0 1.5em;
-  max-width: 450px;
+  max-width: 550px;
   font-size: 1em;
   line-height: 1.6;
+  background: white;
+}
+
+.cart {
+  padding: 1.2em 0;
 }
 
 .your-cart {
   text-align: center;
   font-size: 1.2em;
   margin-top: 0;
-}
-
-.cart {
-  padding: 1.2em 0;
 }
 
 .cart-item {
