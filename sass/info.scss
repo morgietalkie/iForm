@@ -60,7 +60,10 @@
 
 .form-group input:valid:not(:placeholder-shown):not(:focus) {
   border-color: green;
+
+  content: "\f00c";
 }
+
 .form-group input:invalid:not(:placeholder-shown):not(:focus) {
   border-color: red;
 }
