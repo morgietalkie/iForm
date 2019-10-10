@@ -39,6 +39,7 @@
   line-height: 0;
   width: 15px;
   height: 15px;
+  cursor: pointer;
 }
 
 .close_popup > .fa {
@@ -79,6 +80,7 @@
   font-size: 1em;
   background: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .changed_image {
@@ -211,6 +213,7 @@ fieldset {
   border: 2px #8686863f solid;
   border-radius: 5px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .popup_input:checked + .popup_label:after {
