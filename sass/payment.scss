@@ -30,7 +30,7 @@ input[type="radio"] {
 }
 
 input[type="radio"],
-[type="checkbox"] {
+input[type="checkbox"] {
   -webkit-appearance: none;
   position: relative;
   float: left;
@@ -40,12 +40,40 @@ input[type="radio"],
   border: 1px solid silver;
   background: white;
   top: 3px;
+  display: grid;
+  grid: 1fr / 1fr;
 }
 
 input[type="radio"]:checked,
 input[type="checkbox"]:checked {
   background-color: hsl(145, 81%, 69%);
   border-color: #6ef0a5;
+}
+
+input[type="radio"]:checked:after {
+  content: "";
+  grid-area: 1 / 1;
+  height: 0.5rem;
+  width: 0.9rem;
+  border-color: red;
+  border: solid #fff;
+  border-width: 0 0 3px 3px;
+  place-self: center;
+  transform: translateY(-2px) rotate(-48deg) skewX(-6deg);
+  border-radius: 0 0 0 1.5px;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "";
+  grid-area: 1 / 1;
+  height: 0.5rem;
+  width: 0.9rem;
+  border-color: red;
+  border: solid #fff;
+  border-width: 0 0 3px 3px;
+  place-self: center;
+  transform: translateY(-2px) rotate(-48deg) skewX(-6deg);
+  border-radius: 0 0 0 1.5px;
 }
 
 .inner-form-inline {
