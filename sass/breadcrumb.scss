@@ -16,18 +16,21 @@
   color: #cecccc;
 }
 
-.breadcrumb_arrow {
-  height: 15px;
-  width: 15px;
-  background-color: #f4f4f4;
-  border-bottom: 1px solid #d1d0d080;
-  border-right: 1px solid #d1d0d080;
-  transform: rotate(45deg);
-  position: relative;
+// .breadcrumb_arrow {
+//   height: 15px;
+//   width: 15px;
+//   background-color: #f4f4f4;
+//   border-bottom: 1px solid #d1d0d080;
+//   border-right: 1px solid #d1d0d080;
+//   transform: rotate(45deg);
+//   position: relative;
+//   bottom: 8.5px;
+//   z-index: 1;
+// }
 
-  bottom: 8.5px;
-  z-index: 1;
-}
+// .arrow_pos {
+//   left: 60px;
+// }
 
 .breadcrumb_current {
   color: rgba(207, 12, 12, 0.774);
